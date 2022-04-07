@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey</title>
+    <style>
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .opt{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+      }
+
+      #survey-form {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        width: 70%;
+      }
+      div {
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      input{
+          margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <h1 id="title">调查表单</h1>
+      <p id="description">感谢您花费时间完成此调查</p>
+      <form action="" id="survey-form">
+        <div>
+          <label for="name">名字</label>
+          <input placeholder="名字" type="text" id="name" required/>
+        </div>
+
+        <div>
+          <label for="email">email</label>
+          <input placeholder="email" type="email" id="email" required/>
+        </div>
+
+        <div>
+          <label for="age">年龄</label>
+          <input placeholder="年龄" min="0" type="number" required id="number" />
+        </div>
+
+        <div>
+          <label for="dropdown">你最喜欢的数字</label>
+          <select name="" id="dropdown">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div>
+          擅长框架
+          <div class="opt">
+            <input type="checkbox" id="vue" />
+            <label for="vue">vue</label>
+          </div>
+
+          <div class="opt">
+            <input type="checkbox" id="react"  />
+           <label for="react">react</label>
+          </div>
+
+          <div class="opt">
+            <input type="checkbox" id="angular" />
+            <label for="angular">angular</label>
+          </div>
+        </div>
+        <div>
+          <label for="advice">评价或建议</label>
+          <textarea name="" id="advice" cols="30" rows="10"></textarea>
+        </div>
+        <button id="submit">提交</button>
+      </form>
+    </section>
+  </body>
+</html>
