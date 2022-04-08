@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>productsLogin</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        min-height: 75px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: #fff;
+      }
+      header > img {
+        padding: 5px;
+        height: 75px;
+      }
+
+      li {
+        list-style: none;
+        color: black;
+      }
+
+      a{
+          text-decoration: none;
+      }
+
+      a:visited{
+          color: black;
+      }
+
+      #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      nav > ul {
+        width: 35vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      #nav-link {
+        list-style: none;
+      }
+
+      #hero {
+        margin-top: 90px;
+      }
+
+      #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #email {
+        margin-top: 20px;
+        max-width: 30%;
+        height: 30px;
+        padding: 5px;
+      }
+
+      #submit {
+        margin-top: 20px;
+        width: 100px;
+        height: 30px;
+        border: none;
+        background-color: rgb(236, 158, 13);
+      }
+
+      .col-2 {
+        width: 20%;
+        margin: 10px;
+        height: 100%;
+      }
+
+      .col-8 {
+        width: 80%;
+      }
+
+      #info {
+        padding: 4rem;
+      }
+
+      .info-item {
+        display: flex;
+        margin: 20px;
+      }
+
+      #hiw {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+      }
+
+      iframe{
+          height: 60%;
+          width: 70%;
+      }
+
+      #price-board {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+      }
+
+      #product {
+        border: 1px solid black;
+
+        margin: 10px;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      #product > * {
+        /* margin: 10px; */
+      }
+
+
+      .level {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(209, 205, 205);
+        margin-top: 0px;
+        padding: 0px;
+      }
+
+      .level-info{
+          margin: 20px;
+          display: flex;
+          flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .level-info>*{
+        margin: 10px;
+      }
+
+
+      .level-info > button {
+        border: none;
+        background-color: rgb(231, 149, 16);
+        width: 100px;
+        padding: 0.5rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+          alt="logo"
+          id="header-img"
+        />
+        <nav id="nav-bar">
+          <ul>
+            <li id="nav-link"><a href="#info">产品介绍</a></li>
+            <li id="nav-link"><a href="#hiw">原理</a></li>
+            <li id="nav-link"><a href="#price-board">价格</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="hero">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input type="email" name="" id="email" />
+          <input type="submit" value="提交" id="submit" />
+        </form>
+        <div id="info">
+          <div class="info-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXVIea5_Vz-DPGVgxE9purnIEkpF2_wmQcEA&usqp=CAU"
+              alt=""
+              class="col-2"
+            />
+            <div>
+              <h2>产品介绍</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem velit consequatur dolorum placeat esse beatae,
+                eligendi ab nemo incidunt mollitia adipisci autem nobis culpa
+                voluptatum. Sapiente minima ratione neque sunt!
+              </p>
+            </div>
+          </div>
+          <div class="info-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfopBSvqITEeFl0GJdBXZmH9Sk1hIUy19w0Q&usqp=CAU"
+              alt=""
+              class="col-2"
+            />
+            <div>
+              <h2>工作原理</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+                hic aliquam nisi totam beatae aspernatur modi mollitia non vel,
+                perspiciatis rem quis facere optio qui asperiores recusandae
+                sapiente accusamus ut.
+              </p>
+            </div>
+          </div>
+          <div class="info-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqpbmlAA-dbu0CE6Ug_Jf6jK7OKO3Cj5k9tQ&usqp=CAU"
+              alt=""
+              class="col-2"
+            />
+            <div>
+              <h2>价格</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                eos recusandae fugiat neque enim odio voluptatibus atque porro
+                dignissimos eligendi, doloribus a sunt necessitatibus distinctio
+                magni quidem corporis quas? Quis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="hiw">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div id="price-board">
+          <div id="product">
+            <div class="level">初级</div>
+            <div class="level-info">
+              <h2>¥99</h2>
+              <ul>
+                <li>Plays similar to a Trumpet</li>
+                <li>Great for Jazz Bands</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ul>
+              <button>选择</button>
+            </div>
+          </div>
+          <div id="product">
+            <div class="level">初级</div>
+            <div class="level-info">
+              <h2>¥199</h2>
+              <ul>
+                <li>Plays similar to a Trumpet</li>
+                <li>Great for Jazz Bands</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ul>
+              <button>选择</button>
+            </div>
+          </div>
+          <div id="product">
+            <div class="level">初级</div>
+            <div class="level-info">
+              <h2>¥299</h2>
+              <ul>
+                <li>Plays similar to a Trumpet</li>
+                <li>Great for Jazz Bands</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ul>
+              <button>选择</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
