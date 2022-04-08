@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>技术文档</title>
+    <style>
+        header{
+            font-size: 30px;
+            font-weight:700;
+        }
+
+        #navbar{
+            width: 25%;
+            position: fixed;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            border-right: 2px solid gray;
+        }
+
+        #navbar>header{
+            padding: 20px;
+            text-align: center;
+        }
+        #content{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #content>a{
+            border-top: 1px solid gray;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #content>a:visited{
+            color: green;
+        }
+
+        #main-doc{
+            margin-left: 28%;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>前端知识</header>
+      <div id="content">
+        <a href="#HTML" class="nav-link">HTML</a>
+        <a href="#CSS" class="nav-link">CSS</a
+        ><a href="#JavaScript" class="nav-link">JavaScript</a>
+        <a href="#node" class="nav-link">node</a
+        ><a href="#vue" class="nav-link">vue</a>
+      </div>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section">
+        <header id="HTML">HTML</header>
+        <p>
+            超文本标记语言 (英语：Hypertext Markup Language，简称：HTML ) 是一种用来结构化 Web 网页及其内容的标记语言。网页内容可以是：一组段落、一个重点信息列表、也可以含有图片和数据表。
+        </p>
+        <p>
+            HTML 不是一门编程语言，而是一种用于定义内容结构的标记语言。HTML 由一系列的元素（elements）组成，这些元素可以用来包围不同部分的内容，使其以某种方式呈现或者工作。 一对标签（ tags）可以为一段文字或者一张图片添加超链接，将文字设置为斜体，改变字号，等等。 例如，键入下面一行内容：
+        </p>
+        <p>
+          HTML 使用“标记”（markup）来注明文本、图片和其他内容，以便于在 Web
+          浏览器中显示。HTML 标记包含一些特殊“元素”如
+          &lt;head&gt;，&lt;title&gt;，&lt;body&gt;，&lt;header&gt;，&lt;footer&gt;，&lt;article&gt;，&lt;section&gt;，&lt;p&gt;，&lt;div&gt;，&lt;span&gt;，&lt;img&gt;，&lt;aside&gt;，&lt;audio&gt;，&lt;canvas&gt;，&lt;datalist&gt;，&lt;details&gt;，&lt;embed&gt;，&lt;nav&gt;，&lt;output&gt;，&lt;progress&gt;，&lt;video&gt;
+          等等等等。
+        </p>
+       
+        <code>
+            &lt;p&gt;我的猫咪脾气&lt;strong&gt;暴躁&lt;strong&gt;:)&lt;p&gt;
+        </code><code></code><code></code><code></code><code></code>
+       
+      </section>
+      <section class="main-section">
+        <header id="CSS">CSS</header>
+        <p>CSS（层叠样式表）用于设置和布置网页 - 例如，更改内容的字体，颜色，大小和间距，将其拆分为多个列，或添加动画和其他装饰功能。这个模块为你掌握CSS的过程提供了一个温和的开端，包括它如何工作的基础知识，语法是什么样的，以及如何开始使用它来为HTML添加样式。</p>
+        <p>CSS 可以用于给文档添加样式 —— 比如改变标题和链接的颜色及大小。它也可用于创建布局 —— 比如将一个单列文本变成包含主要内容区域和存放相关信息的侧边栏区域的布局。它甚至还可以用来做一些特效，比如动画。查看本段内容中所给出的特定案例。</p>
+        
+      </section>
+      <section class="main-section">
+        <header id="JavaScript">JavaScript</header>
+        <p>JavaScript 是一种脚本，一门编程语言，它可以在网页上实现复杂的功能，网页展现给你的不再是简单的静态信息，而是实时的内容更新，交互式的地图，2D/3D 动画，滚动播放的视频等等。</p>
+       
+      </section>
+      <section class="main-section">
+        <header id="node">node</header>
+        <p>Node（正式名称 Node.js）是一个开源的、跨平台的运行时环境，有了它，开发人员可以使用 JavaScript 创建各种服务器端工具和应用程序。此运行时主要用于浏览器上下文之外（即可以直接运行于计算机或服务器操作系统上）。据此，该环境省略了一些浏览器专用的 JavaScript API，同时添加了对更传统的 OS API（比如 HTTP 库和文件系统库）的支持。</p>
+     
+      <section class="main-section">
+        <header id="vue">vue</header>
+        <p>Vue是一个现代JavaScript框架提供了有用的设施渐进增强——不像许多其他框架,您可以使用Vue增强现有的HTML。这使您可以使用Vue作为jQuery等库的临时替代品。
+
+            也就是说,您还可以使用Vue编写整个单页应用程序(SPAs)。这允许您创建标记完全由Vue管理,可以提高开发人员的经验和性能在处理复杂的应用程序。当你需要的时候它还允许您利用其他库对客户端路由和状态进行管理。此外,Vue需要“中间地带”的方法工具客户端路由和状态管理。虽然Vue核心团队维护了建议的函数库，但他们并没有直接捆绑到 Vue 里。这样你就可以选择一个其他路由/状态管理库，来更好地适应您的应用程序。</p>
+        
+      </section>
+    </main>
+  </body>
+</html>
