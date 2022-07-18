@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        position: fixed;
+        top: 0;
+        min-height: 75px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(182, 180, 180);
+      }
+      section{
+          margin: 20px;
+      }
+      #main {
+        margin-top: 100px;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #item {
+        border: 3px solid grey;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #in {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #out {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #int1,
+      #int2 {
+        width: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>transfer</header>
+    </nav>
+    <main id="main">
+      <section id="item">
+        <div id="title">范围内的数字求和</div>
+        <div id="in">
+          <h2>范围</h2>
+          <div>
+            <input type="text" name="left" id="int1" />
+            到
+            <input type="text" name="" id="int2" />
+          </div>
+        </div>
+        <div id="out">
+          <h2>输出</h2>
+          <p id="answer"></p>
+          <button id="computed">计算</button>
+        </div>
+      </section>
+      <section id="item">
+        <div id="title">数组的对称差</div>
+        <div id="in">
+          <h2>范围</h2>
+          <div>
+            <input type="text" name="left" id="int1" />
+            到
+            <input type="text" name="" id="int2" />
+          </div>
+        </div>
+        <div id="out">
+          <h2>输出</h2>
+          <p id="answer"></p>
+          <button id="computed">计算</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<script>
+  let btn = document.querySelector('#computed')
+  
+
+  btn.addEventListener('click', () => {
+    let int1 = document.querySelector('#int1')
+    let int2 = document.querySelector('#int2')
+
+    let ans = document.querySelector('#answer')
+    let arr = []
+    arr.push(Number(int1.value), Number(int2.value))
+    ans.innerHTML = sumAll(arr)
+    console.log(ans.innerHTML)
+  })
+
+  function sumAll(arr) {
+    let b = arr[0] < arr[1] ? arr[1] : arr[0]
+    let i = arr[0] < b ? arr[0] : arr[1]
+    let extendArr = []
+
+    while (i <= b) {
+      extendArr.push(i)
+      i++
+    }
+    return extendArr.reduce((sum, i) => (sum += i))
+  }
+</script>
